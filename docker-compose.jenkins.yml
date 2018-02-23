@@ -1,0 +1,11 @@
+version: "2"
+services:
+  jenkins:
+    build: ./jenkins
+    ports:
+      - 20080:8080
+    volumes:
+      - ./jenkins/jenkins_home:/var/jenkins_home
+
+volumes:
+  jenkins_home:
