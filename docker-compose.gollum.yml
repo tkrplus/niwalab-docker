@@ -1,0 +1,8 @@
+version: "2"
+services:
+  gollum:
+    build: ./gollum
+    ports:
+      - 8180:80
+    env_file:
+      ./gollum/.env
